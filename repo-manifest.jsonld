@@ -39,8 +39,9 @@
     {
       "@id": "https://repolex.ai/r/psycopg/psycopg2/commit/fd9ae8cad2bcfc3e7e9410e7b6f07cda8f4f05ec",
       "git:hexsha": "fd9ae8cad2bcfc3e7e9410e7b6f07cda8f4f05ec",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "2.9.11"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "2.9.11",
+      "repolex:parsedAt": "2026-04-09T17:33:53.060328+00:00"
     },
     {
       "@id": "https://repolex.ai/r/psycopg/psycopg2/commit/0f82879936043247f1bc4fbfcf5f8dd729e26d74",
