@@ -6,29 +6,27 @@ RDF knowledge graph data for [psycopg/psycopg2](https://github.com/psycopg/psyco
 
 ## How to use this data
 
-The easiest way to get started is to install the [lexq](https://github.com/repolex-ai/lexq) query tool using [uv](https://docs.astral.sh/uv/getting-started/installation/).
-
-If you have uv installed, just copy/paste this into your terminal:
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
 
 ```bash
-uv tool install git+https://github.com/repolex-ai/lexq
+cargo install --git https://github.com/repolex-ai/rlex
 ```
 
-This installs lexq onto your system, in your user context. Verify the install:
+Verify the install:
 
 ```bash
-lexq --help
+rlex --help
 ```
 
-**lexq is designed to be used primarily by LLMs in a terminal.** Start up your favorite LLM and ask it to use the lexq tool. It's that easy!
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
 
 To load this repo's data:
 
 ```bash
-lexq download psycopg/psycopg2
+rlex download psycopg/psycopg2
 ```
 
-This will automatically download essential data files from the last parsed commit. Consult `lexq --moreinfo` for other options, including downloading multiple commits, blobs, etc.
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
 
 ## Data structure
 
@@ -38,11 +36,16 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 .
 ├── aggregate
 │   ├── ast
+│   │   ├── 1bf8e77ea25608c4797a7e902cc02550096e5b40
+│   │   │   └── chunk-001.nq.gz
 │   │   └── fd9ae8cad2bcfc3e7e9410e7b6f07cda8f4f05ec
 │   │       └── chunk-001.nq.gz
 │   ├── lsp
+│   │   ├── 1bf8e77ea25608c4797a7e902cc02550096e5b40.nq.gz
 │   │   └── fd9ae8cad2bcfc3e7e9410e7b6f07cda8f4f05ec.nq.gz
 │   └── repolex
+│       ├── 1bf8e77ea25608c4797a7e902cc02550096e5b40
+│       │   └── chunk-001.nq.gz
 │       └── fd9ae8cad2bcfc3e7e9410e7b6f07cda8f4f05ec
 │           └── chunk-001.nq.gz
 └── blob
@@ -239,12 +242,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── cca7fc278f5c81ce23a2687208f0d63a6ea44009.nq.gz
     ├── cdb1c9ae1e0a60fa66588a31ad8e56dee603b5fe.nq.gz
     ├── d102d734ff57a4400257a3d19fc43fbe3a8be58d.nq.gz
-    ├── d231c3add4b06a4f5d2998e9bad8bb1baa5d57c6.nq.gz
-    ├── d32250ea2c9d1046d239e9e75bffef7cc19ec44a.nq.gz
-    ├── d34a01710c699617436eb90acbf5956404e2f957.nq.gz
-    └── d38566c88358edd3c0292f294964ac349d241304.nq.gz
+    └── d231c3add4b06a4f5d2998e9bad8bb1baa5d57c6.nq.gz
 
-8 directories, 200 files
+10 directories, 200 files
 ```
 
 | Directory | What it contains |
@@ -258,10 +258,11 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 | `branch/` | Branch metadata. |
 | `tag/` | Tag metadata. |
 | `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
 
 ## Source repository
 
 [psycopg/psycopg2](https://github.com/psycopg/psycopg2)
 
 ---
-*Parsed on 2026-04-09 by [repolex](https://repolex.ai)*
+*Parsed on 2026-09-27 by [repolex](https://repolex.ai)*

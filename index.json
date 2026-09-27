@@ -1,5 +1,16 @@
 {
   "org": "psycopg",
   "repo": "psycopg2",
-  "versions": []
+  "versions": [
+    {
+      "commit": "1bf8e77ea25608c4797a7e902cc02550096e5b40",
+      "tag": "2_9_5",
+      "parsed_at": "2026-09-27T19:03:39.104797+00:00"
+    },
+    {
+      "commit": "fd9ae8cad2bcfc3e7e9410e7b6f07cda8f4f05ec",
+      "tag": "2.9.11",
+      "parsed_at": "2026-04-09T17:33:53.060158+00:00"
+    }
+  ]
 }
