@@ -1,0 +1,57 @@
+[2026-09-27T07:04:45Z] === ENRICH ITERATION 1 START | repo=psycopg/psycopg2 sha=1bf8e77e ===
+[2026-09-27T07:04:45Z] [iter=1] PHASE START: enrich repo=psycopg/psycopg2 sha=1bf8e77e runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1bf8e77e-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1bf8e77ea25608c4797a7e902cc02550096e5b40.nq.gz
+[2026-09-27T07:04:45Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-27T07:04:55Z] [iter=1] AST store loaded triples=1302296 load_secs=9 mem_mb=866 MB
+[2026-09-27T07:04:55Z] [iter=1] Step 2: Finding LSP targets mem_mb=866 MB
+[2026-09-27T07:04:58Z] [iter=1] LSP targets found call_sites=11721 imports=505 extends=126 implements=0 secs=3
+[2026-09-27T07:05:00Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=866 MB
+[2026-09-27T07:05:08Z] [iter=1] Position index built positions=87558 nodes_with_types=110272 secs=8 mem_mb=866 MB
+[2026-09-27T07:05:08Z] [iter=1] Step 3: Starting LSP resolution mem_mb=866 MB already_completed_types=[] already_completed_files=0
+[2026-09-27T07:05:08Z] [iter=1] Resolving target type target_type=call_site count=11721
+[2026-09-27T07:05:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=1 resolved=5 errors=11 current=psycopg/cursor_type.c
+[2026-09-27T07:06:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=2 resolved=10 errors=195 current=psycopg/psycopgmodule.c
+[2026-09-27T07:09:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.6 files_done=5 resolved=23 errors=457 current=psycopg/column_type.c
+[2026-09-27T07:09:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.2 files_done=7 resolved=23 errors=523 current=psycopg/lobject_int.c
+[2026-09-27T07:10:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=11 resolved=25 errors=599 current=psycopg/connection_int.c
+[2026-09-27T07:11:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=12 resolved=37 errors=720 current=psycopg/connection_type.c
+[2026-09-27T07:12:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.2 files_done=13 resolved=40 errors=852 current=psycopg/microprotocols.c
+[2026-09-27T07:13:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=17 resolved=43 errors=907 current=psycopg/adapter_list.c
+[2026-09-27T07:13:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=20 resolved=43 errors=965 current=psycopg/typecast.c
+[2026-09-27T07:14:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.7 files_done=23 resolved=43 errors=1023 current=psycopg/cursor_int.c
+[2026-09-27T07:15:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.3 files_done=27 resolved=47 errors=1085 current=psycopg/typecast_basic.c
+[2026-09-27T07:15:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.8 files_done=37 resolved=54 errors=1140 current=psycopg/replication_message_type.c
+[2026-09-27T07:23:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.9 files_done=41 resolved=210 errors=2015 current=tests/test_cursor.py
+[2026-09-27T07:27:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.3 files_done=42 resolved=242 errors=2383 current=tests/__init__.py
+[2026-09-27T07:29:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.2 files_done=44 resolved=275 errors=2703 current=tests/test_sql.py
+[2026-09-27T07:31:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.8 files_done=45 resolved=341 errors=2872 current=tests/test_copy.py
+[2026-09-27T07:33:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.4 files_done=46 resolved=401 errors=3042 current=lib/_range.py
+[2026-09-27T07:36:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.3 files_done=48 resolved=445 errors=3364 current=tests/test_connection.py
+[2026-09-27T07:45:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.0 files_done=49 resolved=509 errors=4407 current=tests/test_notify.py
+[2026-09-27T07:46:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.8 files_done=50 resolved=545 errors=4498 current=tests/test_fast_executemany.py
+[2026-09-27T07:47:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.8 files_done=51 resolved=601 errors=4605 current=tests/test_types_basic.py
+[2026-09-27T07:49:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.7 files_done=52 resolved=689 errors=4810 current=lib/extras.py
+[2026-09-27T07:50:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.9 files_done=53 resolved=844 errors=4938 current=tests/test_extras_dictcursor.py
+[2026-09-27T07:54:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.6 files_done=54 resolved=951 errors=5350 current=doc/src/tools/make_sqlstate_docs.py
+[2026-09-27T07:55:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.0 files_done=57 resolved=998 errors=5499 current=tests/dbapi20.py
+[2026-09-27T07:58:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.6 files_done=58 resolved=1062 errors=5782 current=tests/test_module.py
+[2026-09-27T07:59:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=59 resolved=1083 errors=5897 current=tests/test_lobject.py
+[2026-09-27T08:01:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.9 files_done=60 resolved=1115 errors=6135 current=tests/dbapi20_tpc.py
+[2026-09-27T08:02:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.5 files_done=61 resolved=1117 errors=6203 current=doc/src/tools/lib/ticket_role.py
+[2026-09-27T08:03:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.7 files_done=64 resolved=1223 errors=6329 current=scripts/build/appveyor.py
+[2026-09-27T08:04:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.0 files_done=65 resolved=1333 errors=6472 current=tests/testutils.py
+[2026-09-27T08:05:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.7 files_done=66 resolved=1406 errors=6543 current=doc/src/tools/lib/dbapi_extension.py
+[2026-09-27T08:06:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.7 files_done=69 resolved=1454 errors=6653 current=tests/test_errors.py
+[2026-09-27T08:07:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.8 files_done=72 resolved=1503 errors=6778 current=tests/testconfig.py
+[2026-09-27T08:08:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.6 files_done=75 resolved=1563 errors=6862 current=tests/test_with.py
+[2026-09-27T08:09:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.8 files_done=76 resolved=1573 errors=6995 current=tests/test_cancel.py
+[2026-09-27T08:10:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.5 files_done=79 resolved=1608 errors=7068 current=tests/test_psycopg2_dbapi20.py
+[2026-09-27T08:10:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.1 files_done=81 resolved=1627 errors=7136 current=tests/test_errcodes.py
+[2026-09-27T08:11:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.7 files_done=86 resolved=1665 errors=7196 current=doc/src/conf.py
+[2026-09-27T08:11:33Z] [iter=1] Target type resolved target_type=call_site resolved=1680 errors=7207 secs=3986 mem_mb=866 MB
+[2026-09-27T08:11:33Z] [iter=1] Resolving target type target_type=import_statement count=505
+[2026-09-27T08:11:40Z] [iter=1] Target type resolved target_type=import_statement resolved=201 errors=0 secs=6 mem_mb=866 MB
+[2026-09-27T08:11:40Z] [iter=1] Resolving target type target_type=extends_clause count=126
+[2026-09-27T08:11:42Z] [iter=1] Target type resolved target_type=extends_clause resolved=109 errors=0 secs=2 mem_mb=866 MB
+[2026-09-27T08:11:54Z] [iter=1] Step 5: Writing final enrichment file triples=76512
+[2026-09-27T08:11:55Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/1bf8e77ea25608c4797a7e902cc02550096e5b40.nq.gz size_kb=1526
+[2026-09-27T08:11:55Z] [iter=1] PHASE END: enrich elapsed_s=4030 elapsed_min=67.2 total_triples=76512
